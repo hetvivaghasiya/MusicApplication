@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fusion</string>
+    <string name="app_link">
+
+        <a bgcolor="#B3446C" href="activity_registor.xml">Sign up</a></string>
+    <string name="profile">
+        <a href="">Change Picture</a></string>
+
+    <string name="zero">00:00</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share">share</string>
+
+</resources>

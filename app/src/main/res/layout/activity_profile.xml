@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/wrapper"
+    android:background="@drawable/app_back"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFILE"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+
+            android:layout_marginTop="45dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/custom_shape"
+            android:elevation="10dp"
+            android:paddingVertical="30dp">
+
+
+            <TextView
+                android:id="@+id/txtUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Hey, "
+
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/proimage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/txtUsername"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/trans"
+                android:elevation="5dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp" />
+
+            <ProgressBar
+                android:id="@+id/probar"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/txtUsername"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:elevation="10dp"
+                android:padding="60dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/changet2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/proimage"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="@string/profile"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/savebtn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/changet2"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_back"
+
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/logoutbtn"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/savebtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/search_back"
+                android:backgroundTint="@color/white"
+                android:text="Logout"
+
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottombar"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/menu_navigation">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

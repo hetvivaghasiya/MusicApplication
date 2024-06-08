@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/logbtn"
+    android:background="@drawable/app_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+
+        android:text="hey! Here 's\n your first\n step with \nus!"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+
+    <TextView
+        android:id="@+id/txtlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Registration"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:elevation="10dp"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/search_back"
+            android:drawableLeft="@drawable/drawable_user"
+            android:drawablePadding="10dp"
+            android:hint="Username"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingLeft="15dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/user2"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_back"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="15dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+
+        <EditText
+            android:id="@+id/regpass"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_back"
+            android:drawableLeft="@drawable/custom_password"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Password "
+            android:inputType="textPassword"
+            android:paddingHorizontal="15dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/regpass2"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_back"
+            android:drawableLeft="@drawable/confirmps"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="confirm Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="15dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/regbtn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/r2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/search_back"
+            android:text="Sign up"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            android:textStyle="bold">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </LinearLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r2"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible">
+
+    </ProgressBar>
+
+</RelativeLayout>

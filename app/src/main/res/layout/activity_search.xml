@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_back"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+
+        android:text="What do you like?"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editsearch"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/search_back"
+        android:drawableLeft="@drawable/custom_search"
+        android:drawablePadding="10dp"
+        android:hint="Search here"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#CCFFFFFF"
+        android:textSize="15sp">
+
+    </EditText>
+
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/search_icon"
+        android:backgroundTint="#454545">
+
+    </ImageView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar"
+        android:layout_below="@+id/editsearch"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottombar"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/menu_navigation">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

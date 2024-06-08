@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "835486120484",
+    "firebase_url": "https://muzex-35ed0-default-rtdb.firebaseio.com",
+    "project_id": "muzex-35ed0",
+    "storage_bucket": "muzex-35ed0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835486120484:android:420a1e3e92e202b7cbb6b1",
+        "android_client_info": {
+          "package_name": "com.example.muzex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835486120484-ihe6er8ijsfscg89kfhpte7nhdger78d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhsVtJI2RViQzYsTrdM7II-o8N6SDj5cY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835486120484-ihe6er8ijsfscg89kfhpte7nhdger78d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835486120484:android:9eedabc85f7d293acbb6b1",
+        "android_client_info": {
+          "package_name": "com.example.muzexadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835486120484-ihe6er8ijsfscg89kfhpte7nhdger78d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhsVtJI2RViQzYsTrdM7II-o8N6SDj5cY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835486120484-ihe6er8ijsfscg89kfhpte7nhdger78d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
